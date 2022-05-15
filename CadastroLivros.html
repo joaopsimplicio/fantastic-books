@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Livros - Fantastic Books</title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/design.css">
+</head>
+
+<body style="background-color: #e6fff2">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow mb-3"
+            style="background-color: #6699ff">
+            <div class="container">
+                <a href="Index.html" class="navbar-brand text-light">Fantastic Books</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a href="Index.html" class="nav-link text-light">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Fantasias.html" class="nav-link text-light">Fantasias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Generos.html" class="nav-link text-light">Gêneros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="CadastroLivros.html" class="nav-link text-light">Cadastre seus Livros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ListaDeLivros.html" class="nav-link text-light">Livros Cadastrados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Institucional.html" class="nav-link text-light">Institucional</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Mensagens.html" class="nav-link text-light">Mensagens</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main style="margin: 0 20px 0 20px">
+        <div class="row d-flex align-items-center">
+            <div class="col-6">
+                <h1>Cadastre seus Livros</h1>
+                <p>Quer que algum dos livros que você tem apareça no nosso site? Então cadastre-o aqui, e logo
+                    logo atualizaremos as informações para que o seu livro esteja contando em nossa plataforma!
+                </p>
+            </div>
+
+            <div class="col-6" style="padding: 25px 0 0 100px; color: #e6e6e6">
+                <form method="POST" style="background-color: #4d88ff; padding: 20px 0 20px 20px; margin-right: 40px; border-radius: 10px">
+                    <p>
+                        <label asp-for="titulo">Título</label><br>
+                        <input asp-for="titulo" style="width:425px; background-color: #b3c6ff; border:none"
+                            required /><br>
+                    </p>
+                    <p>
+                        <label asp-for="autor">Autor</label><br>
+                        <input asp-for="autor" style="width:425px; background-color: #b3c6ff; border:none"
+                            required /><br>
+                    </p>
+                    <p>
+                        <label asp-for="genero">Gênero</label><br>
+                        <input asp-for="genero" style="width:425px; background-color: #b3c6ff; border:none"
+                            required /><br>
+                    </p>
+                    <p>
+                        <label asp-for="valor">Valor médio: R$ </label><br>
+                        <input asp-for="valor" style="width:425px; background-color: #b3c6ff; border:none"
+                            placeholder="0,00" /><br>
+                    </p>
+                    <p>
+                        <label asp-for="sinopse">Sinopse</label><br>
+                        <textarea asp-for="sinopse"
+                            style="width:425px; background-color: #b3c6ff; border:none"></textarea><br>
+                    </p>
+                    <input type="submit" value="Cadastrar" class="border-white"
+                        style="background-color: #4d88ff; border-radius: 5px" />
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer text-muted">
+        <div class="container">
+            &copy; 2022 | Fantastic Books | João Paulo Simplicio
+        </div>
+    </footer>
+</body>
+
+</html>

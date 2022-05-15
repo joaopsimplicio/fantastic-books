@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institucional - Fantastic Books</title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/design.css">
+</head>
+
+<body style="background-color: #e6fff2">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow mb-3"
+            style="background-color: #6699ff">
+            <div class="container">
+                <a href="Index.html" class="navbar-brand text-light">Fantastic Books</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a href="Index.html" class="nav-link text-light">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Fantasias.html" class="nav-link text-light">Fantasias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Generos.html" class="nav-link text-light">Gêneros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="CadastroLivros.html" class="nav-link text-light">Cadastre seus Livros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ListaDeLivros.html" class="nav-link text-light">Livros Cadastrados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Institucional.html" class="nav-link text-light">Institucional</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Mensagens.html" class="nav-link text-light">Mensagens</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main style="margin: 0 20px 0 20px">
+        <div class="row">
+            <div class="col-6">
+                <h1>Sobre nós</h1>
+                <p>Esta biblioteca virtual foi criada com o intuito de promover a integridade das
+                    informações sobre os vários livros de fantasia e de outros gêneros para que os
+                    leitores possam verificar em um único lugar todas as observações sobre as obras
+                    antes de adquirir nas lojas e livrarias.
+                </p>
+                <img src="img/biblioteca.jpg" alt="Biblioteca"><br>
+            </div>
+
+            <div
+                style="background-color: #4d88ff; color: #e6e6e6; width: 470px; padding: 20px 0 0 20px; margin: 20px 0 0 50px; border-radius: 10px">
+                <h2>Fale Conosco</h2>
+                <p>Envie-nos uma mensagem, sugestões, críticas ou elogios:</p>
+
+                <form method="POST" style="background-color: #4d88ff">
+                    <p>
+                        <label asp-for="nome">Nome</label><br>
+                        <input asp-for="nome" style="width:425px; background-color: #b3c6ff; border:none"
+                            required /><br>
+                    </p>
+                    <p>
+                        <label asp-for="email">Email</label><br>
+                        <input asp-for="email" style="width:425px; background-color: #b3c6ff; border:none"
+                            required /><br>
+                    </p>
+                    <p>
+                        <label asp-for="telefone">Telefone</label><br>
+                        <input asp-for="telefone" style="width:425px; background-color: #b3c6ff; border:none"
+                            required /><br>
+                    </p>
+                    <p>
+                        <label asp-for="assunto">Assunto</label><br>
+                        <textarea asp-for="assunto" style="width:425px; background-color: #b3c6ff; border:none"
+                            required></textarea><br>
+                    </p>
+                    <input type="submit" value="Enviar" class="border-white"
+                        style="background-color: #4d88ff; border-radius: 5px" />
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer text-muted">
+        <div class="container">
+            &copy; 2022 | Fantastic Books | João Paulo Simplicio
+        </div>
+    </footer>
+</body>
+
+</html>
